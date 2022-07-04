@@ -1,6 +1,9 @@
 const board = (() =>{
   const gameArray = ['','','','','','','','',''];
 
+  let container = document.querySelector('.container');
+  let playerWinner = document.querySelector('.result');
+
   const possibilities = [
     [0,1,2],
     [3,4,5],
@@ -16,7 +19,7 @@ const board = (() =>{
 
   let gameActive = true;
 
-  return {gameArray, possibilities, gameActive, PLAYER_ONE};
+  return {gameArray, possibilities, gameActive, PLAYER_ONE, playerWinner, container};
 })(); 
 
 const emptySquare = (square) => {
@@ -32,7 +35,6 @@ const changePlayer = () => {
 
 const validateThePlay = (index) => {
   board.gameArray[index] = board.PLAYER_ONE;
-
 }
 
 const ifWin = () => {
@@ -49,15 +51,17 @@ const ifWin = () => {
       board.gameActive = false;      
     }
   }
+  if(!board.gameArray.includes('')){
+    board.container.classList.remove('inGame');
+    board.playerWinner.textContent = 'TIE';
+  }
 }
 
 const winner = () => {
   if(board.gameActive === false){
-    let container = document.querySelector('.container');
-    container.classList.remove('inGame');
+    board.container.classList.remove('inGame');
 
-    let playerWinner = document.querySelector('.result');
-    playerWinner.textContent = `${board.PLAYER_ONE} \n venceu`;
+    board.playerWinner.textContent = `${board.PLAYER_ONE} \n venceu`;
   }
 }
 

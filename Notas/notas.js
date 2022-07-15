@@ -7,7 +7,6 @@ class aluno {
 }
 
 class MediaEscolar extends aluno {
-  
   calculaMedia(grades) {
     let gradesList = ''
     let gradesN = 0
@@ -55,9 +54,17 @@ while(chosenOption != '4'){
       }
       break;
     case '2':
+      if(totalGrades.length === 0){
+        alert('Ainda não há notas registradas')
+        break;
+      }
       alert('Nota: ' + totalGrades.join(`\nNota: `));
       break;
     case '3': 
+      if(totalGrades.length === 0){
+        alert('Ainda não há notas registradas')
+        break;
+      }
       alunos.calculaMedia(totalGrades);
       break;
     case '4':

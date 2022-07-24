@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema Solar</title>
+  </head>
+  <body>
+    <h1>Calcule a massa de um objeto em um planeta do sistema solar</h1>
+    <form id="myform">
+      <input type="text" name="massInKg" id="mass" placeholder="Massa em Kilogramas">
+      <select id="planetSelected">
+        <option value="">Selecione um planeta</option>
+        <option value="mercury">Mercúrio</option>
+        <option value="venus">Vênus</option>
+        <option value="earth">Terra</option>
+        <option value="mars">Marte</option>
+        <option value="jupiter">Júpiter</option>
+        <option value="saturn">Saturno</option>
+        <option value="uranus">Urano</option>
+        <option value="neptune">Netuno</option>
+      </select>
+      <input id="submitForm" type="submit" value="Calcular Massa">
+    </form>
+
+    <script type="module" src="./script.mjs"></script>
+    <script type="module" src="./planets.mjs"></script>
+  </body>
+</html>

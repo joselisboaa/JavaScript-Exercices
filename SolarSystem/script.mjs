@@ -26,6 +26,8 @@ myForm.addEventListener('submit', (event) => {
     container.appendChild(outputText)    
     outputText.innerText = `A massa do objeto é de \n ${weight} N`
   }).catch(error => {
+    container.appendChild(outputText)    
+    
     outputText.innerText = error
     container.removeChild(planetImage)
   })

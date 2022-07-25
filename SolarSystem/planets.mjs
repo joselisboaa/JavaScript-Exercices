@@ -17,15 +17,13 @@ class Planets {
     this.gravity = gravity
   }
 
-  calculateWeight(objectMass) {
-    return new Promise((resolve, reject) => {
+  async calculateWeight(objectMass) {
       weight = this.gravity * objectMass
       if(objectMass > 0 && this.gravity != undefined){
-        resolve(weight)
+        return weight
       } else {
-        reject('É necessário um valor válido de massa e selecionar um Planeta')
+        return Promise.reject('É necessário um valor válido de massa e selecionar um Planeta')
       }
-    })
   }
 }
 

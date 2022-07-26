@@ -1,5 +1,6 @@
 class list {
   constructor(item) {
+<<<<<<< HEAD
     this.item = item;
   }
   info() {
@@ -29,6 +30,37 @@ form.addEventListener('submit', e => {
   li.textContent = task.info();
   ++i;
   console.log(i);
+=======
+    this.item = item
+  }
+  info() {
+    return this.item
+  }
+}
+
+let tarefa = document.getElementsByName('tarefa')[0]
+let form = document.querySelector('form')
+let i = 0
+
+form.addEventListener('submit', e => {
+  let li = document.createElement('li')
+  let checkbox = document.createElement('input')
+  const task = new list(tarefa.value)
+  let div = document.createElement('div')
+
+  div.classList.add('list')
+
+  checkbox.setAttribute('type', 'checkbox')
+  checkbox.setAttribute('onchange', 'done(this)')
+  e.preventDefault()
+  document.querySelector('ul').appendChild(div)
+  document.querySelectorAll('.list')[i].appendChild(checkbox)
+  document.querySelectorAll('.list')[i].appendChild(li)
+
+  li.textContent = task.info()
+  ++i
+  console.log(i)
+>>>>>>> adc93baee8ca5ab86fe25d3402821d34f0c47283
 })
 
 function done(e){

@@ -23,6 +23,7 @@ body{
 /* ========= CONTAINER ============ */
 .container{
   display: flex;
+<<<<<<< HEAD
   width: 60%;
   height: 18.75rem;
   flex-flow: row wrap;
@@ -32,6 +33,22 @@ body{
   gap: 3rem;
 }
  
+=======
+
+  width: 60%;
+  height: 18.75rem;
+
+  flex-flow: row wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(128, 128, 128, 0.301);
+
+  gap: 3rem;
+}
+
+>>>>>>> adc93baee8ca5ab86fe25d3402821d34f0c47283
 .planetImg{
   width: 18.75rem;
   height: 18.75rem;

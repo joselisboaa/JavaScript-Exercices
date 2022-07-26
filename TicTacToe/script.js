@@ -15,7 +15,11 @@ const board = (() =>{
     [2,4,6]
   ];
 
+<<<<<<< HEAD
   const PLAYER_ONE = 'X';
+=======
+  const PLAYER_ONE = 'X'
+>>>>>>> adc93baee8ca5ab86fe25d3402821d34f0c47283
 
   let gameActive = true;
 
@@ -30,7 +34,11 @@ const emptySquare = (square) => {
 }
 
 const changePlayer = () => {
+<<<<<<< HEAD
   board.PLAYER_ONE = board.PLAYER_ONE === 'X' ? 'O' : 'X';
+=======
+  board.PLAYER_ONE = board.PLAYER_ONE === 'X' ? 'O' : 'X'
+>>>>>>> adc93baee8ca5ab86fe25d3402821d34f0c47283
 }
 
 const validateThePlay = (index) => {
@@ -40,9 +48,15 @@ const validateThePlay = (index) => {
 const ifWin = () => {
   for(let i = 0; i <= 7; i++){
     let win = board.possibilities[i];
+<<<<<<< HEAD
     const a = board.gameArray[win[0]];
     const b = board.gameArray[win[1]];
     const c = board.gameArray[win[2]];
+=======
+    const a = board.gameArray[win[0]]
+    const b = board.gameArray[win[1]]
+    const c = board.gameArray[win[2]]
+>>>>>>> adc93baee8ca5ab86fe25d3402821d34f0c47283
 
     if(a === '' || b === '' || c === ''){
       continue;

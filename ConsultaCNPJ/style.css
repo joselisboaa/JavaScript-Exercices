@@ -1,0 +1,93 @@
+:root {
+  --submit-btn: #0071ad;
+  --h1: #004d96;
+}
+
+* { 
+  font-family: "Trebuchet MS", "arial", "helvetica", "Open Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  color: var(--h1);
+  font-size: 2.5rem;
+}
+
+#cep_form label { 
+  font-size: 1.5rem;
+}
+
+#cep {
+  width: 40rem;
+  height: 3.5rem;
+  padding: 0.5rem 1.5rem;
+}
+
+#cep, .input_btn {
+  outline-color: var(--submit-btn);
+}
+.container {
+  align-items: center;
+}
+
+.container, #cep_form {
+  gap: 2rem;
+}
+
+.container, .input_box, #cep_form {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.input_btn, .cep_table thead {
+  color: #fff;
+}
+
+.input_btn {
+  background-color: var(--submit-btn);
+  border: 0;
+  border-radius: 0.25rem;
+  width: 13rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+#cep_infos {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.cep_table {
+  text-align: left;
+  border-collapse: collapse;
+  font-size: 1.5rem;
+}
+
+.cep_table thead {
+  height: 5rem;
+  background-color: var(--submit-btn);
+}
+
+
+.cep_table th:first-child{
+  border-radius: 0.5rem 0 0 0;
+}
+
+.cep_table th:last-child{
+  border-radius: 0 0.5rem 0 0 ;
+}
+
+.cep_table th {
+  width: 10rem;
+  padding: 1.5rem;
+}
+
+.cep_table td {
+  padding-left: 1.5rem;
+}

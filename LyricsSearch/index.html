@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Lyrics</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row-title">
+      <h1>Lyrics Search</h1>
+    </div>
+    <div class="form-container">
+      <form id="lyric-form">
+        <div class="form-row">
+          <div class="artist-box">
+            <label for="artist">Artist/Band</label>
+            <input type="text" name="artist" id="artist" placeholder="Artist">
+          </div>
+          <div class="music-box">
+            <label for="music">Music</label>
+            <input type="text" name="music" id="music" placeholder="Music">
+          </div>
+        </div>
+        <input type="submit" value="Search Music" class="form-input">
+      </form>
+    </div>
+    <div class="lyric-searched">
+      <pre id="lyrics"></pre>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

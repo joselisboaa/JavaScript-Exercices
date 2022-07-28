@@ -1,0 +1,13 @@
+* { 
+  font-family: Quicksand;
+  font-size: 62.5%;
+}
+
+#imc-form {
+  width: 45rem;
+  height: 24rem;
+}
+
+.form-container {
+  display: flex;
+}

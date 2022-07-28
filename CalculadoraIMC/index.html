@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora IMC</title>
+</head>
+<body>
+  <div class="container">
+    <h1><span>Í</span>ndice de <span>M</span>assa <span>C</span>orporal</h1>
+    <div class="form-container">
+      <form id="imc-form">
+        <label for="age" placeholder="Idade">Idade</label>
+        <input type="text" name="age" id="age">
+        <label for="height" >Altura</label>
+        <input type="text" name="height" id="height" placeholder="Altura em cm">
+        <label for="weight">Peso</label>
+        <input type="text" name="weight" id="weight" placeholder="peso em KG">
+        <select>
+          <option value="female">Feminino</option>
+          <option value="male">Masculino</option>
+        </select>
+      </form>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -13,7 +13,6 @@ const planetsGravity = {
 
 class Planets {
   constructor(name, gravity){
-<<<<<<< HEAD
     this.name = name;
     this.gravity = gravity;
   }
@@ -24,24 +23,8 @@ class Planets {
         return weight;
       } else {
         return Promise.reject('É necessário um valor válido de massa e selecionar um Planeta');
-=======
-    this.name = name
-    this.gravity = gravity
-  }
-
-  async calculateWeight(objectMass) {
-      weight = this.gravity * objectMass
-      if(objectMass > 0 && this.gravity != undefined){
-        return weight
-      } else {
-        return Promise.reject('É necessário um valor válido de massa e selecionar um Planeta')
->>>>>>> adc93baee8ca5ab86fe25d3402821d34f0c47283
       }
   }
 }
 
-<<<<<<< HEAD
 export { Planets, planetsGravity };
-=======
-export { Planets, planetsGravity }
->>>>>>> adc93baee8ca5ab86fe25d3402821d34f0c47283

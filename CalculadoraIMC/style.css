@@ -1,13 +1,111 @@
 * { 
+  box-sizing: border-box;
   font-family: Quicksand;
-  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
 }
 
-#imc-form {
-  width: 45rem;
-  height: 24rem;
+body {
+  background-color: bisque;
+  height: 75vh;
+}
+
+body, #imc-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#imc-form, .form-container{
+  flex-flow: row wrap;
+}
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 3rem;
 }
 
 .form-container {
   display: flex;
+  width: 27.5rem;
+  border: 2px cornflowerblue solid;
+  background-color: #fff;
+}
+
+input, select, label {
+  margin-top: 1.25rem;
+  height: 2rem;
+  width: 5.75rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input {
+  margin-right: 1.125rem;
+}
+.form-container, input, select {
+  border-radius: 1rem;
+}
+
+input, select {
+  padding-left: 0.5rem;
+  outline-color: #74beff;
+  background-color: #cbe7fd;
+  border: 0;
+}
+
+select {
+  width: 12.5rem;
+}
+
+.calc-result {
+  text-align: center;
+  width: 100%;
+}
+
+.submit { 
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  background-color: #9944ff;
+  outline: #652daa;
+}
+
+.submit:active {
+  background-color: #652daa;
+}
+
+strong, .bmi-rate {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+span:nth-child(1) {
+  color: #00ccff;
+}
+
+span:nth-child(2), .avg-bmi {
+  color: #32cc32;
+}
+
+span:nth-child(3) {
+  color: #ED820E;
+}
+
+.low-bmi, .obesity1-bmi {
+  color: #FF4500
+}
+
+.over-bmi {
+  color: #EB9605
+}
+
+.obesity2-bmi {
+  color: #ff4444;
+}
+
+.obesity3-bmi {
+  color: #ff0000;
 }

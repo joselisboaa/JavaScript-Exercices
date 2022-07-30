@@ -58,7 +58,8 @@ input, select {
 }
 
 select {
-  width: 12.5rem;
+  margin-right: 1.125rem;
+  width: 11.5rem;
 }
 
 .calc-result {

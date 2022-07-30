@@ -21,7 +21,7 @@ async function calculateBMI(weight, height, age, gender) {
   resultElementRate.classList.remove('obesity2-bmi');
   resultElementRate.classList.remove('obesity3-bmi');
   if (height > 0 && weight > 0 && age > 0 && gender !== ''){
-    resultElement.innerHTML = `o seu IMC é <strong>${Math.round(bmi)}</strong> kg/m²`;
+    resultElement.innerHTML = `o seu IMC é <strong>${bmi.toFixed(2)}</strong> kg/m²`;
     if(bmi < 18.5) {
       resultElementRate.innerHTML = `Abaixo do Peso`;
       resultElementRate.classList.add('low-bmi');
@@ -43,7 +43,7 @@ async function calculateBMI(weight, height, age, gender) {
     } else {
       resultElementRate.innerHTML = 'Verifique se as informações estão corretas';
     }
-    console.log(resultElement.innerHTML);
+    console.log(bmi);
   } else {
     resultElement.innerText = '';
     return Promise.reject('Teste');
